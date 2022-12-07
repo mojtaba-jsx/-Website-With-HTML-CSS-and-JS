@@ -1,0 +1,25 @@
+/* all font for the project */
+
+@font-face {
+    font-family:Poppins-Black ;
+    src: url(./fonts/Poppins-Black.ttf);
+}
+
+@font-face {
+    font-family: Poppins-BlackItalic;
+    src: url(./fonts/Poppins-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold ;
+    src: url(./fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family:PaytoneOne-Regular ;
+    src: url(./fonts/PaytoneOne-Regular.ttf);
+}
