@@ -39,14 +39,14 @@ header{
     font-size: 35px;
     font-weight: 600px;
     letter-spacing: 1px;
-    color: var(--text-color);
+    color: var(--bg-color);
     font-family:Poppins-SemiBold ;
 }
 .navbar{
     display: flex;
 }
 .navbar a{
-    color: var(--text-color);
+    color: var(--bg-color);
     font-size: var(--p-font);
     font-weight: 500;
     padding: 10px 22px;
@@ -67,4 +67,51 @@ header{
 
 }
 /* end styles for header  */
+
+
+/* start styles for home section  */
+section{
+    padding: 80px 18%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    line-height: 1.2;
+    color: var(--bg-color);
+    font-family: PaytoneOne-Regular ;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.home-text p{
+    color: #ffffffbf;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 38px;
+    margin-bottom: 50px;
+}
+.home-btn{
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px;
+    background: #ffffffbf;
+    color: var(--main-color);
+    border-radius: 4px;
+    transition: ease .40s;
+}
+.home-btn:hover{
+    background: var(--bg-color);
+    transform: scale(1.1);
+}
+
+/* end styles for home section  */
 
