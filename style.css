@@ -55,18 +55,18 @@ header{
     font-family: Poppins-Medium;
 }
 .navbar a:hover{
-    background:var(--bg-color) ;
-    color: var(--text-color);
-    box-shadow: 5px 10px 30px rgb(85 85 85 /20%);
+	background: var(--bg-color);
+	color: var(--text-color);
+	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	border-radius: 4px;
 }
 #menu-icon{
-    color: var(--bg-color);
-    font-size: 35px;
-    cursor: pointer;
-    display: none;
-
+	color: var(--text-color);
+	font-size: 35px;
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
 }
-
 header.sticky{
     background:var(--bg-color) ;
     padding: 10px 18%;
@@ -78,11 +78,7 @@ header.sticky{
 .sticky .navbar a{
     color: var(--text-color);
 }
-
-
 /* end styles for header  */
-
-
 /* start styles for home section  */
 section{
     padding: 80px 18%;
@@ -126,11 +122,7 @@ section{
     background: var(--bg-color);
     transform: scale(1.1);
 }
-
-
 /* end styles for home section  */
-
-
 /* start style for container  */
 .text h2{
     font-size: var(--h2-font);
@@ -143,7 +135,6 @@ section{
     align-items: center;
     text-align: center;
     margin-top: 5rem;
-
 }
 .container-box{
     background-color: var(--bg-color);
@@ -177,10 +168,8 @@ section{
     box-shadow: 5px 30px 56.1276px rgb(55, 55, 55 );
     border: 1px solid transparent;
     transform: translateY(-3px);
-
 }
 /* end style for container  */
-
  /* start style for package section */
  .title{
     text-align: center;
@@ -226,13 +215,11 @@ section{
     color: var(--main-color);
     font-size: 20px;
  }
-
  .location h4{
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 8px;
  }
-
  .location p{
     font-size: 15px;
     color: var(--second-color);
@@ -242,11 +229,7 @@ section{
     transform: scale(1.04);
 }
  /* end style for package section */
-
-
-
  /* start style for destination section  */
-
 .destination-content{
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(200px, auto));
@@ -288,7 +271,6 @@ section{
     cursor: pointer;
 }
   /* end style for destination section  */
-
   /* start style for newsletter */
   .newsletter{
     display: flex;
@@ -334,11 +316,7 @@ section{
     cursor: pointer;
 }
   /* end style for newsletter */
-
-
-  
 /* start style for footer  */
-
 #contact{
     background: var(--main-color);
 }
@@ -406,8 +384,92 @@ section{
     letter-spacing: 2px;
     
 }
-
-
-
-
 /* end style for footer  */
+/* start media queries for responsive */
+@media (max-width:1400px){
+    header{
+       padding: 17px 3%;
+       transition: .2s;  
+    }
+    header .sticky{
+        padding: 10px 3%;
+        transition: .2s;
+    }
+    section{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+    :root{
+        --bg-font:4.5rem : ;
+        --h2-font:2.3rem : ;
+        --p-font: 1rem;
+        transition: .2s;
+    }   
+}
+@media (max-width:1040px){
+    #menu-icon{
+        display: block;
+    }
+    .sticky #menu-icon{
+        color: var(--text-color);
+    }
+    .home{
+        height: 88vh;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 270px;
+        height: 120vh;
+        background: #1067cc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 30px;
+        transition: 0.5s all;
+    }
+    .navbar a{
+        display: block;
+        margin: 1.2rem 0;
+    }
+    .sticky .navbar a{
+        color: var(--bg-color);
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+    }
+    .open{
+        right: 0;
+    }
+    .list{
+        width: 50%;
+        margin-bottom: 12px;
+    }
+}
+@media (max-width:575px){
+    .list{
+        width: 100%;
+    }
+    .newsletter form{
+        width: 350px;
+    }
+    :root{
+        --big-font:3.8rem;
+        --h2-font:1.8rem;
+        transition: .2s;
+    }
+    .text{
+        text-align: center;   
+    }
+    .home{
+        height: 85vh;
+        transition: .2s;
+    }
+
+}
+/* end media queries for responsive */
+
+
+
+
